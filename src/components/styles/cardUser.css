@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 .card__title {
-    padding: 5px;
+    padding: 10px;
 }
 .content {
     padding: 1.5rem;
