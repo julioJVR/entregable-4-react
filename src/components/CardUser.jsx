@@ -16,9 +16,11 @@ const CardUser = ({user, deleteUser, setEditUser, setIsOpen}) => {
     <article className='card'>
         <h3 className='card__title'>{user.first_name} {user.last_name}</h3>
         <div className='content'>
-            <li><span>correo: <span></span>{user.email}</span></li>
+            <li><span>correo: </span>
             <br />
+            <span>{user.email}</span></li>
             <section>
+                    <br />
                     <span>Cumpleaños</span>
                     <br />
                     <div className='adjust'>
