@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     transform: scale(0);
     transition: transform .25s;
 }
@@ -51,7 +51,6 @@ label {
 .form__item {
     font-size: 1.5em;
     color: black;
-    margin: 15px;
 }
 .form__control {
     display: block;
