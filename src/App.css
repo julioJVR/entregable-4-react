@@ -47,7 +47,7 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-    .app-cards {
+    .app__cards {
         display: flex;
         flex-direction: column;
     }

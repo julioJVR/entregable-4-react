@@ -15,6 +15,7 @@ const CardUser = ({user, deleteUser, setEditUser, setIsOpen}) => {
   return (
     <article className='card'>
         <h3 className='card__title'>{user.first_name} {user.last_name}</h3>
+        <hr />
         <div className='content'>
             <li><span>correo: </span>
             <br />
@@ -29,6 +30,7 @@ const CardUser = ({user, deleteUser, setEditUser, setIsOpen}) => {
                     </div>
             </section>
         </div>
+        <hr />
         <footer className='footer'>
             <button onClick={handleDelete}>
                 <box-icon name='trash' color='red'></box-icon>

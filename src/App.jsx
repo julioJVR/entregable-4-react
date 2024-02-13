@@ -8,11 +8,11 @@ function App() {
   
   const [editUser, setEditUser] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const url = 'https://users-crud.academlo.tech';
+  const url = 'https://users-crud.academlo.tech/';
   const [users, getUsers, createUser, deleteUser, updateUser] = useCrud(url);
 
   useEffect(() => {
-    getUsers('/users');
+    getUsers('/users/');
   }, []);
 
   const handleOpen = () => {
