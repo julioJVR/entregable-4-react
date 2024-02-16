@@ -50,23 +50,23 @@ const FormUser = ({createUser, editUser, updateUser, setEditUser, isOpen, setIsO
                 <input className='form__control'{...register('email')} id='email' type="email" />
             </div>
             <div className='form__item'>
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input className='form__control'{...register('password')}id='password' type="password" />
             </div>
             <div className='form__item'>
-                <label htmlFor="first_name">first_name</label>
+                <label htmlFor="first_name">Firstname</label>
                 <input className='form__control'{...register('first_name')}id='first_name' type="text" />
             </div>
             <div className='form__item'>
-                <label htmlFor="last_name">last_name</label>
+                <label htmlFor="last_name">Lastname</label>
                 <input className='form__control'{...register('last_name')}id='last_name' type="text" />
             </div>
             <div className='form__item'>
-                <label htmlFor="birthday">birthdate</label>
+                <label htmlFor="birthday">Birthdate</label>
                 <input className='form__control'{...register('birthday')}id='birthday' type="date" />
             </div>
             <div className='form__btn__group'>
-            <button className='form__btn'>Submit</button>
+                <button className='form__btn'>Guardar</button>
             </div>
         </form>
     </div>

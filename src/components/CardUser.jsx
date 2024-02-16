@@ -13,33 +13,33 @@ const CardUser = ({user, deleteUser, setEditUser, setIsOpen}) => {
     }
 
   return (
-    <article className='card'>
-        <h3 className='card__title'>{user.first_name} {user.last_name}</h3>
-        <hr />
-        <div className='content'>
-            <li><span>correo: </span>
-            <br />
-            <span>{user.email}</span></li>
-            <section>
-                    <br />
-                    <span>Cumpleaños</span>
-                    <br />
-                    <div className='adjust'>
-                        <box-icon name='gift'></box-icon>
-                        <span>{user.birthday}</span>
-                    </div>
-            </section>
-        </div>
-        <hr />
-        <footer className='footer'>
-            <button onClick={handleDelete}>
-                <box-icon name='trash' color='red'></box-icon>
-            </button>
-            <button onClick={handleEdit} className='btn'>
-                <box-icon type='solid' name='edit-alt'></box-icon>
-            </button>
-        </footer>
-    </article>
+        <article className='card'>
+            <h3 className='card__title'>{user.first_name} {user.last_name}</h3>
+            <hr />
+
+            <div className='content'>
+                <span>Correo </span>
+                <span>{user.email}</span>
+            </div>
+                
+            <div className='content'>
+                <span>Cumpleaños</span>
+
+                <div className='adjust'>
+                    <box-icon name='gift'></box-icon>
+                    <span>{user.birthday}</span>
+                </div>
+            </div>
+            <hr />
+            <footer className='footer'>
+                <button onClick={handleDelete} className='btn'>
+                    <box-icon name='trash' color='red'></box-icon>
+                </button>
+                <button onClick={handleEdit} className='btn'>
+                    <box-icon type='solid' name='edit-alt'></box-icon>
+                </button>
+            </footer>
+        </article>
   )
 }
 
